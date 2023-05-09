@@ -1,17 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Card from './components/Card';
+import Header from './components/pages/Header';
+import Footer from './components/pages/Footer';
+import './styles/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// In our main App component, we are rendering only single instances of Header and Navbar and several instances of Card
-function App() {
-  return (
+function App(){
+  return(
     <div>
-      <Header />
-      <Navbar />
-      <Card />
-      <Card />
-      <Card />
+      <Header/>
+      <Footer/>
     </div>
   );
 }
