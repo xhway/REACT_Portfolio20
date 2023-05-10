@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import {Route, Redirect, HashRouter} from "react-router-dom";
+import {Route, redirect,Routes, HashRouter} from "react-router-dom";
+
 import Navigation from "../Navigation";
 import About from "./About";
 import Portfolio from "../Portfolio";
@@ -15,11 +16,12 @@ class Header extends Component {
         </header>
 
         <div className ="content">
-          <Route exact path="/" render={() => <Redirect to="/about" />} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact}/>
-          <Route path="/resume" component={Resume}/>
+          <Routes>
+          <Route path="/about" element={About} />
+          <Route path="/portfolio" element={Portfolio} />
+          <Route path="/contact" element={Contact}/>
+          <Route path="/resume" element={Resume}/>
+          </Routes>
         </div>
       </HashRouter>
     )
