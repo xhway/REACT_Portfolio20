@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Route, redirect,Routes, HashRouter} from "react-router-dom";
 
-import Navigation from "../Navigation";
+import Navigation from "../NavTabs";
 import About from "./About";
 import Portfolio from "../Portfolio";
 import Contact from "./Contact";
