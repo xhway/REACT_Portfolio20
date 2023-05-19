@@ -3,15 +3,15 @@ import React from 'react';
 function About() {
   return(
     <section className='container'>
-      <h2 class="top-title">Darius Holloway</h2>
+      <h2 class="top-title">About Me</h2>
       <hr></hr>
       <div>
 
       <p>
-         IT Batch Contol Engineer.
+         IT Batch Control Engineer/Webdev.
       </p>
     <p>
-      Currently gaining web development experience.
+      
     </p>
       </div>
     </section>

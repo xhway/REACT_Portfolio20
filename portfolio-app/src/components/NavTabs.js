@@ -30,7 +30,7 @@ function NavTabs({ currentPage, setCurrentPage }) {
         <a
           href="#resume"
           onClick={() => setCurrentPage('Resume')}
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
           Resume
@@ -40,10 +40,20 @@ function NavTabs({ currentPage, setCurrentPage }) {
         <a
           href="#contact"
           onClick={() => setCurrentPage('Contact')}
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#projects"
+          onClick={() => setCurrentPage('Project')}
+          
+          className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
+        >
+          Projects
         </a>
       </li>
     </ul>
