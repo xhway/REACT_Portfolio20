@@ -8,10 +8,10 @@ function About() {
       <div>
 
       <p>
-         IT Batch Control Engineer/Webdev.
+         IT Batch Control Engineer
       </p>
     <p>
-      
+      Future WebDev
     </p>
       </div>
     </section>
